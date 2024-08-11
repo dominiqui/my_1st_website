@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominiqui Nuñez | Contact</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Courier New", Courier, monospace;
+        background: linear-gradient(to right, #4a4a4a, #0a0a0a);
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        background-color: #32cd32;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #228b22;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .container h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .form-group input[type="text"],
+      .form-group textarea {
+        background-color: #333;
+        color: #ccc;
+      }
+
+      .form-group input[type="submit"] {
+        background-color: #32cd32;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .form-group input[type="submit"]:hover {
+        background-color: #228b22;
+      }
+
+      footer {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+      <h1>Contact me</h1>
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            name="title"
+            placeholder="What you're writing about?"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Full message comes here..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <footer>&copy; 2024 Dominiqui Nuñez. All Rights Reserved.</footer>
+  </body>
+</html>
